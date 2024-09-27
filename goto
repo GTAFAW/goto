@@ -1,46 +1,46 @@
 函数脚本()
 
-本地Orion lib = loadstring(游戏:http get("https://pastebin。com/raw/xLRUSiKx "())" https://pastebin 。com/raw/xLRUSiKx "())
+地方Orion lib = loadstring(游戏:http get("https://pastebin。com/raw/xLRUSiKx "())" https://pastebin。com/raw/xLRUSiKx "())
 
-地方LBLG=例子。new("screen GUI "，getParent).new("ScreenGui "，getParent)
+地方LBLG=例子.new("screen GUI",getParent)。new("ScreenGui",getParent)
 
-地方LBL = instance.new("文本标签"(getParent).new("TextLabel "，getParent)
+地方LBL = instance.new("Text-Label(getparent)new("TextLabel",getParent)
 
 本地玩家=游戏。玩家。本地玩家.玩家.本地玩家
 
 
 
-LBLG的。名称="LBLG " .名称= "LBLG "
+关于LBLG,则。姓名=“LBLG”。姓名=“LBLG”
 
-LBLG的。家长=游戏科尔吉。家长=游戏。CoreGui
+关于LBLG,则。家长=Spiele von Corgi。家长=游戏.CoreGui
 
-LBLG的ZIndexBehavior =枚举的zindex行为.同胞。ZIndexBehavior =枚举的zindex行为.同胞
+关于LBLG,则ZIndexBehavior =Die Aufzählungzindex行为。同胞.ZIndexBehavior =Die Aufzählungzindex行为。同胞
 
-LBLG的。启用=真的。启用=真的
+关于LBLG,则。启用=真的。启用=真的
 
-LBL的。名称="LBL " .名称= "LBL "
+LBL,则。姓名是“LBL”。姓名=“LBL”
 
-LBL的。父=LBLG .父元素= LBLG
+LBL,则。父亲=LBLG。Elemento Padre= LBLG
 
-LBL . background color 3 = color 3 . new(1，1，1).
+LBL的。背景颜色3=颜色3new(1,1,1)。
 
-LBL .背景透明度= 1。BackgroundTransparency = 1
+LBL的。Background 透明= 1。背景透明度 = 1
 
-LBL。BorderColor3 = Color3.new(0，0，0)
+LBL的。BorderColor3 = Color3.new(0,0,0)
 
-LBL。Position = UDim2.new(0.75，0，0.010，0)
+LBL的。位置 = UDim2.new(0.75,0,0.010,0)
 
-LBL。Size = UDim2.new(0，133，0，30)
+LBL的。size = UDim2.new(0,133,0,30)
 
-LBL。Font = Enum。字体. GothamSemibold
+LBL的。font=枚举。字体。关于Gotham Semibold
 
-LBL。Text = "TextLabel "
+LBL的。Text = "TextLabel"
 
-LBL。TextColor3 = Color3.new(1，1，1)
+LBL的。TextColor3 = Color3.new(1,1,1)
 
-LBL。TextScaled = true
+LBL的。TextScaled = true
 
-LBL。TextSize = 14
+LBL的。TextSize = 14
 
 LBL。TextWrapped = true
 
@@ -82,7 +82,7 @@ Start = tick()
 
 心跳:连接(心跳更新)
 
-游戏:get service(" starter GUI "):set core(" send notification "，{ Title = "成功进入";Text = "神光脚本";持续时间= 4；})
+游戏:get service(" starter GUI "):set core(" send notification "，{ Title = "成功进入";Text = "goto脚本";持续时间= 4；})
 
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx')()
 
