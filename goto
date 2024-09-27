@@ -1,50 +1,50 @@
 函数脚本()
 
-local Orion lib = loadstring(game:http get(" https://pastebin . com/raw/xLRUSiKx "))()"https://pastebin.com/raw/xLRUSiKx"))()
+本地Orion lib = loadstring(游戏:http get("https://pastebin。com/raw/xLRUSiKx "())" https://pastebin 。com/raw/xLRUSiKx "())
 
-local LBLG = instance . new(" screen GUI "，getParent).new("ScreenGui", getParent)
+地方LBLG=例子。new("screen GUI "，getParent).new("ScreenGui "，getParent)
 
-本地LBL = Instance.new("TextLabel "，getParent).new("TextLabel", getParent)
+地方LBL = instance.new("文本标签"(getParent).new("TextLabel "，getParent)
 
-本地玩家=游戏。玩家。本地玩家.Players.LocalPlayer
+本地玩家=游戏。玩家。本地玩家.玩家.本地玩家
 
 
 
-LBLG。Name = "LBLG ".Name = "LBLG"
+LBLG的。名称="LBLG " .名称= "LBLG "
 
-LBLG。家长=游戏。CoreGui.Parent = game.CoreGui
+LBLG的。家长=游戏科尔吉。家长=游戏。CoreGui
 
-LBLG。ZIndexBehavior = Enum。ZIndexBehavior .同胞.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG的ZIndexBehavior =枚举的zindex行为.同胞。ZIndexBehavior =枚举的zindex行为.同胞
 
-LBLG。启用=真.Enabled = true
+LBLG的。启用=真的。启用=真的
 
-LBL。Name = "LBL ".Name = "LBL"
+LBL的。名称="LBL " .名称= "LBL "
 
-LBL。Parent = LBLG.Parent = LBLG
+LBL的。父=LBLG .父元素= LBLG
 
-LBL。BackgroundColor3 = Color3.new(1，1，1).BackgroundColor3 = Color3.new(1, 1, 1)
+LBL . background color 3 = color 3 . new(1，1，1).
 
-LBL。BackgroundTransparency = 1.BackgroundTransparency = 1
+LBL .背景透明度= 1。BackgroundTransparency = 1
 
-LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL。BorderColor3 = Color3.new(0，0，0)
 
-LBL.Position = UDim2.new(0.75,0,0.010,0)
+LBL。Position = UDim2.new(0.75，0，0.010，0)
 
-LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL。Size = UDim2.new(0，133，0，30)
 
-LBL.Font = Enum.Font.GothamSemibold
+LBL。Font = Enum。字体. GothamSemibold
 
-LBL.Text = "TextLabel"
+LBL。Text = "TextLabel "
 
-LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL。TextColor3 = Color3.new(1，1，1)
 
-LBL.TextScaled = true
+LBL。TextScaled = true
 
-LBL.TextSize = 14
+LBL。TextSize = 14
 
-LBL.TextWrapped = true
+LBL。TextWrapped = true
 
-LBL.Visible = true
+LBL。可见=真
 
 
 
@@ -68,27 +68,27 @@ FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and
 
   end
 
-  FrameUpdateTable[1] = LastIteration
+frame updatetable[1]= last iteration
 
-  local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+本地当前fps =(tick()-Start > = 1且#FrameUpdateTable)或(# frame update table/(tick()-Start))
 
-CurrentFPS = CurrentFPS - CurrentFPS % 1
+当前fps =当前fps-当前fps % 1
 
-  FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+fps标签.Text =("北京时间:"..os.date("%H ").."时"..os.date("%M ").."分"..os.date("%S "))
 
-end
+结束
 
 Start = tick()
 
-Heartbeat:Connect(HeartbeatUpdate)
+心跳:连接(心跳更新)
 
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "成功进入"; Text ="神光脚本"; Duration = 4; })
+游戏:get service(" starter GUI "):set core(" send notification "，{ Title = "成功进入";Text = "神光脚本";持续时间= 4；})
 
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx')()
 
-local Window = OrionLib:MakeWindow({Name = "神光脚本", HidePremium = false, SaveConfig = true,IntroText = "寻找自我 发现自我，这就是我重生的意义", ConfigFolder = "寻找自我 发现自我，这就是我重生的意义"})
+local Window = Orion lib:make Window({ Name = "goto脚本"，HidePremium = false，SaveConfig = true，IntroText = "寻找自我 发现自我,这就是我重生的意义"，配置文件夹= "寻找自我 发现自我,这就是我重生的意义"})
 
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎进入,永远支持龙脚本"; Text ="神光脚本"; Duration = 4; })
+游戏:get service(" starter GUI "):set core(" send notification "，{ Title = "欢迎进入,永远支持龙脚本";Text = "goto脚本";持续时间= 4；})
 
 local Tab =Window:MakeTab({
 
@@ -238,7 +238,7 @@ Tab:AddButton({
 
 --微山doors 2.3.2(愚人节快乐)
 
-loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+loadstring(game:HttpGet(" 104 116 116 112 115 58 47 47 112 97 115 116 101 98 105 110 46 99 111 109 47 114 97 119 47 117 72 72 112 56 102 122 83"))()
 
     end
 
