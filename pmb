@@ -1,0 +1,80 @@
+local CoreGui = game:GetService("StarterGui")
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+end
+if _G.whitelisted==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "检测完毕",
+    Text = a.."你是小go尊贵的用户了",
+    Duration = 5,
+})
+  wait(3)
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/zy"))()
+    else 
+setclipboard("877251886")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "并没有检测到你哦",
+    Text = "看来你并没有添加白名单，群已经帮你复制好了哦",
+    Duration = 10,
+})
+end
