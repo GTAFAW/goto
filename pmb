@@ -1,4 +1,152 @@
 local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "小go正在检测身份",
+    Text = "检测中....",
+    Duration = 5, 
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="GTAFAW"then
+_G.whitelisted=true
+elseif a=="GTAFAW2"then
+_G.whitelisted=true
+elseif a=="GTA_FAW"then
+_G.whitelisted=true
+elseif a=="zyczyc5142311"then
+_G.whitelisted=true
+elseif a=="xiaoming03"then
+_G.whitelisted=true
+elseif a=="bajidashe"then 
+_G.whitelisted=true
+elseif a=="zxczxc15892276801"then 
+_G.whitelisted=true
+elseif a=="Dan_Zai114514"then 
+_G.whitelisted=true
+elseif a=="nise66669"then
+_G.whitelisted=true
+elseif a=="duck114514114514"then
+_G.whitelisted=true
+elseif a=="qwqcnm3"then 
+_G.whitelisted=true
+elseif a=="zzzzzzzkysgw"then 
+_G.whitelisted=true
+elseif a=="habzbazb12"then 
+_G.whitelisted=true
+elseif a=="fenyun_mad"then
+_G.whitelisted=true
+elseif a=="qwertyuiop632522"then 
+_G.whitelisted=true
+elseif a=="1q2wertasdfzxcv"then 
+_G.whitelisted=true
+elseif a=="fgsaqwtuiojvx"then 
+_G.whitelisted=true
+elseif a=="gnfngnj"then
+_G.whitelisted=true
+elseif a=="fgsaqwtuiojvx"then
+_G.whitelisted=true
+elseif a=="Awabrrrrr"then 
+_G.whitelisted=true
+elseif a=="barris997"then 
+_G.whitelisted=true
+elseif a=="458C63cBLuX"then 
+_G.whitelisted=true
+elseif a=="sshjsjhe"then
+_G.whitelisted=true
+elseif a=="458C63cBLuX"then
+_G.whitelisted=true
+elseif a=="CN_jh7"then 
+_G.whitelisted=true
+elseif a=="gahuotu"then 
+_G.whitelisted=true
+elseif a=="hdhdvdhd098"then 
+_G.whitelisted=true
+elseif a=="zxcasdf267"then 
+_G.whitelisted=true
+elseif a=="zxczxcv990"then 
+_G.whitelisted=true
+elseif a=="gahuotu"then
+_G.whitelisted=true
+elseif a=="zxczxc1581"then
+_G.whitelisted=true
+elseif a=="1145454545fg"then 
+_G.whitelisted=true
+elseif a=="zhhvw6"then 
+_G.whitelisted=true
+elseif a=="mynameishakekj"then 
+_G.whitelisted=true
+elseif a=="BaoZi_icu6"then 
+_G.whitelisted=true
+elseif a=="GF10083"then 
+_G.whitelisted=true
+elseif a=="qwq147147147"then
+_G.whitelisted=true
+elseif a=="cxkweopj"then
+_G.whitelisted=true
+elseif a=="mnbvcxz090198"then 
+_G.whitelisted=true
+elseif a=="zhoQQpp8"then 
+_G.whitelisted=true
+elseif a=="yayayuo5jl"then 
+_G.whitelisted=true
+elseif a=="tyrxfgfsd"then 
+_G.whitelisted=true
+elseif a=="JKruixuan"then 
+_G.whitelisted=true
+elseif a=="Ghghvffc2"then
+_G.whitelisted=true
+elseif a=="eoznwsow54"then
+_G.whitelisted=true
+elseif a=="54188daboq"then 
+_G.whitelisted=true
+elseif a=="11264iwqw"then 
+_G.whitelisted=true
+elseif a=="31361id"then 
+_G.whitelisted=true
+elseif a=="dosnxksb"then 
+_G.whitelisted=true
+elseif a=="sydgvdjdh"then 
+_G.whitelisted=true
+elseif a=="Aerukyfff"then 
+_G.whitelisted=true
+elseif a=="xiaoheizi666nb"then 
+_G.whitelisted=true
+elseif a=="54188qwertyuiop9"then 
+_G.whitelisted=true
+elseif a=="gjhddhk"then 
+_G.whitelisted=true
+elseif a=="zxc15862"then 
+_G.whitelisted=true
+elseif a=="sshjsjhe"then 
+_G.whitelisted=true
+elseif a=="wei_wen520"then 
+_G.whitelisted=true
+elseif a=="29614G890"then 
+_G.whitelisted=true
+elseif a=="sjhekxz"then 
+_G.whitelisted=true
+elseif a=="shuaige488"then 
+_G.whitelisted=true
+elseif a=="sjduvudja"then 
+_G.whitelisted=true
+elseif a=="bushilaodi27"then 
+_G.whitelisted=true
+elseif a=="xogsn5"then 
+_G.whitelisted=true
+elseif a=="China_app75"then 
+_G.whitelisted=true
+elseif a=="ghjjc_749"then 
+_G.whitelisted=true
+elseif a=="cars"then 
+_G.whitelisted=true
+elseif a=="Pharmacy69"then 
+_G.whitelisted=true
+elseif a=="cs201049"then 
+_G.whitelisted=true
+elseif a=="f123456789121"then 
+_G.whitelisted=true
+elseif a=="eucdyjg235"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
