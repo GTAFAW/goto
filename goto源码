@@ -39,7 +39,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "goto脚本", HidePremium = false, SaveConfig = true,IntroText = "goto💗💗💗", ConfigFolder = "krx"})
+local Window = OrionLib:MakeWindow({Name = "goto脚本", HidePremium = false, SaveConfig = true,IntroText = "goto💗💗💗", ConfigFolder = "xgo"})
 local Tab = Window:MakeTab({
     Name = "用户",
     Icon = "rbxassetid://4483345998",
