@@ -1,4 +1,4 @@
-一个像样的机器人门脚本。自由和开源的🥶
+
 
 负载串(比赛:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
 链接:
@@ -6,9 +6,6 @@
 🌐网站(全球资讯网的主机站)
 💬不调和
 
-
-mspaint
-A decent roblox doors script. Free and Open Source 🥶
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
 Links:
