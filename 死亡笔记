@@ -8,7 +8,7 @@ local Death = Instance.new('Tool')
 
 Death.Name = "死亡笔记"
 
-Handle.Name = "名称"
+Handle.Name = "Handle"
 
 Death.Parent = game.Players.LocalPlayer.Backpack
 
@@ -46,7 +46,7 @@ local Normal = Enum.EasingStyle.Linear
 
 local ScreenGui = Instance.new("ScreenGui", game.Players["LocalPlayer"].PlayerGui)
 
-ScreenGui.Name = "死亡笔记"
+ScreenGui.Name = "Death Note"
 
 
 
@@ -170,7 +170,7 @@ title.ZIndex = 4
 
 title.Font = "Bodoni"
 
-title.Text = "死亡笔记"
+title.Text = "DEATH NOTE"
 
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -190,7 +190,7 @@ body.ZIndex = 4
 
 body.Font = "Garamond"
 
-body.Text = "输入某人的名称来杀死他👾."
+body.Text = "Type in somebody's name to kill them."
 
 body.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -242,7 +242,7 @@ text.ZIndex = 4
 
 text.Font = "Garamond"
 
-text.Text = "xgo汉化👾."
+text.Text = "This was made by RcDZ."
 
 text.TextColor3 = Color3.fromRGB(255, 255, 255)
 
