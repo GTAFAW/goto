@@ -8,7 +8,7 @@ local function rgb255RichText(color3)
     return string.format("rgb(%d, %d, %d)", R, G, B)
 end
 
--- // Services \\ --
+-- // xgo \\ --
 local Players = game:GetService("Players")
 local Client = Players.LocalPlayer
 
@@ -22,14 +22,14 @@ local win = SolarisLib:Window({
    FolderToSave = "TeamSkeet"
 })
 
-local tab = win:Tab("Autofarm")
+local tab = win:Tab("概要")
 
-local sec = tab:Section("Farms")
-local Racing = tab:Section("Racing")
+local sec = tab:Section("功能")
+local Racing = tab:Section("辅助")
 
-local tab2 = win:Tab("Credits")
+local tab2 = win:Tab("信息")
 
-local secc = tab2:Section("Creators")
+local secc = tab2:Section("信息")
 
 secc:Button("Mana#9724", function()
     setclipboard("Mana#9724")
@@ -62,7 +62,7 @@ secc:Button("Discord", function()
     end
 end)
 
-sec:Toggle("Auto Speed", function(t)
+sec:Toggle("自动速度", function(t)
     StartFarm = t
 end)
 
@@ -82,7 +82,7 @@ spawn(function()
     end
 end)
 
-sec:Toggle("Auto Rebirth", function(t)
+sec:Toggle("自动重生", function(t)
     Auto_Rebirth = t
 end)
 
@@ -96,11 +96,11 @@ spawn(function()
     end
 end)
 
-local slider = sec:Slider("Farming Speed", 10,0,1, function(t)
+local slider = sec:Slider("速度调整", 10,0,1, function(t)
    FarmSpeed = t
 end)
 
-sec:Toggle("Bring Hops", function(t)
+sec:Toggle("带来所有跳圈", function(t)
     Bring_Hops = t
 end)
 
@@ -116,7 +116,7 @@ spawn(function()
     end
 end)
 
-Racing:Toggle("Auto Join Race", function(t)
+Racing:Toggle("自动加入比赛", function(t)
     Auto_Join_Race = t
 end)
 
@@ -132,7 +132,7 @@ spawn(function()
     end
 end)
 
-Racing:Toggle("Auto Race", function(t)
+Racing:Toggle("自动获胜", function(t)
     Auto_Race = t
 end)
 
