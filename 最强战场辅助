@@ -1,0 +1,46 @@
+local  Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("The Strongest Battlegrounds - SumitScripts", "DarkTheme")
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Owner - SumitScripts")
+local Section = Tab:NewSection("Modded By SumitScripts")
+local Section = Tab:NewSection("Like For More Updates")
+local Section = Tab:NewSection("Hello Fix Bugs Report In Discord")
+local Section = Tab:NewSection("Anyways Goodbye Enjoy The Script")
+
+local Tab = Window:NewTab("主要")
+local Section = Tab:NewSection("The Strongest Battlegrounds")
+
+Section:NewButton("Infinity Yield", "Speed , fly , jump etc", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
+
+Section:NewButton("瞄准辅助", "使用它和玩家1v1", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Killer Hub (Updated)", "Keyless , Speed , Rank", function()
+loadstring(game:HttpGet("https://pastefy.app/74w2zF6p/raw",true))();
+    print("Clicked")
+end)
+
+Section:NewSlider("WalkSpeed", "It's Makes U Faster", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+Section:NewSlider("JumpPower", "It's Makes u Jumpy", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+Section:NewButton("飞行", "ButtonInfo", function()
+--script made by Youtube: MrGabbe.   Discord: Mr_G_Curry #6982
+local infjmp = true
+game:GetService("UserInputService").jumpRequest:Connect(function()
+    if infjmp then
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
+    end
+end)
+    print("Clicked")
+end)
