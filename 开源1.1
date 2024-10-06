@@ -1,0 +1,101 @@
+--[[
+对于那些不想被禁止在主账户中的人（运行这是Alt帐户上的脚本）
+]]
+local HttpService = game:GetService("HttpService")
+
+local function sendWeb(color, role, player, icon)
+    local OSTime = os.time()
+    local Time = os.date('!*t', OSTime)
+
+    syn.request({
+        Url = _G.webhook,
+        Method = 'POST',
+        Headers = { ['Content-Type'] = 'application/json' },
+        Body = HttpService:JSONEncode({
+            content = "",
+            embeds = {{
+                title = "**Murder Mystery 2 | Roles Checker**",
+                color = color,
+                fields = {
+                    { name = role .. " Name:", value = player.Name .. " [" .. player.DisplayName .. "]", inline = true },
+                    { name = "Roblox Profile:", value = "[Click here](https://www.roblox.com/users/" .. player.UserId .. "/profile)", inline = true }
+                },
+                thumbnail = { url = "https://files.catbox.moe/" .. icon },
+                timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec)
+            }}
+        })
+    })
+end
+
+local prevMurd, prevSher, heroSent, gunDropped = nil, nil, false, false
+
+while true do
+    local success, err = pcall(function()
+        for _, v in next, getconnections(game.Players.LocalPlayer.Idled) do 
+            v:Disable() 
+        end
+
+        local murder, sheriff
+
+        for _, p in pairs(game.Players:GetPlayers()) do
+            local items = p.Backpack
+            local character = p.Character
+
+            if (items and items:FindFirstChild("Knife")) or (character and character:FindFirstChild("Knife")) then
+                murder = p
+            elseif (items and items:FindFirstChild("Gun")) or (character and character:FindFirstChild("Gun")) then
+                sheriff = p
+            end
+        end
+
+        local normalZone = workspace:FindFirstChild("Normal")
+        if normalZone then
+            local gun = normalZone:FindFirstChild("GunDrop")
+            if gun and gunDropped == false then
+                gunDropped = true
+                syn.request({
+                    Url = _G.webhook,
+                    Method = 'POST',
+                    Headers = { ['Content-Type'] = 'application/json' },
+                    Body = HttpService:JSONEncode({
+                        content = "",
+                        embeds = {{
+                            title = "**Murder Mystery 2 | Roles Checker**",
+                            color = 65280,
+                            fields = {
+                                { name = "Gun Status:", value = "Gun has been Dropped", inline = true },
+                            },
+                            thumbnail = { url = "https://files.catbox.moe/fygk2x.png" },
+                        }}
+                    })
+                })
+            elseif not gun then
+                gunDropped = false
+            end
+        end
+
+        if sheriff and sheriff ~= prevSher and murder == prevMurd then
+            sendWeb(16753920, "Hero", sheriff, "fygk2x.png")
+            gunDropped = false
+            heroSent = true
+        end
+
+        if murder and murder ~= prevMurd then
+            sendWeb(16711680, "Murder", murder, "2soa71.png")
+            prevMurd = murder
+            heroSent = false
+        end
+
+        if sheriff and sheriff ~= prevSher and not heroSent then
+            sendWeb(255, "Sheriff", sheriff, "fygk2x.png")
+        end
+
+        prevSher = sheriff
+    end)
+
+    if not success then
+        warn("Unexpected error: " .. tostring(err))
+    end
+
+    wait(1)
+end
