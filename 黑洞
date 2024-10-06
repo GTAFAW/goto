@@ -121,7 +121,7 @@ local function createControlButton()
     button.Name = "ToggleBlackHoleButton"
     button.Size = UDim2.new(0, 200, 0, 50)
     button.Position = UDim2.new(0.5, -100, 0, 100)
-    button.Text = "T岷痶 Black Hole"
+    button.Text = "xgo  开启/关闭"
     button.TextScaled = true
     button.Parent = screenGui
 
