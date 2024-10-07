@@ -1,0 +1,1050 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Idklol = Instance.new("ScreenGui")
+local ActualUI = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SeparatorThingy = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local News = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ButtonsOrSomething = Instance.new("Frame")
+local MeleeButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HomeButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local RangedButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local OthersButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Tabs = Instance.new("Frame")
+local Melee = Instance.new("ScrollingFrame")
+local Goner = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local LinkedSword = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local GaleFighter = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local BanHammer = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local NeptunianV = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local KrystalDance = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local GoodCopBadCop = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local StarGlitcher = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Home = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local Welcome = Instance.new("TextLabel")
+local Changelog = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_19 = Instance.new("UICorner")
+local Ranged = Instance.new("ScrollingFrame")
+local Sniper = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local SadistGenocider = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Minigun = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local PuppetMaster = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Dearsister = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local AK47 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local StudioDummy = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local LightingCannon = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Others = Instance.new("ScrollingFrame")
+local Motorcycle = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local OpenUI = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local News_2 = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local Close_2 = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local NewsIg = Instance.new("TextLabel")
+
+DisableFX = false
+allowshiftlock = true --adds shiftlock to patchma rig
+ctrltp = true --adds control click tp
+placeholders = true --adds transparent parts showing your hats when you don't have real ones
+clickfling = false --adds click flinging regardless of attacks
+highlightflingtargets = true --highlight fling
+discharscripts = true --disable character scripts
+flingchangestate = true --fling with whole body
+hidedeatheffect = true --hides the red damage border when you die (respawn)
+respawntp = 3 --respawn tp mode
+-- 0 - stay at spawn
+-- 1 - randomtp close
+-- 2 - behind fake character
+-- 3 - hide body
+breakjointsmethod = 1 --breakjoints mode
+-- 1 - health+breakjoints (the most support)
+-- 2 - health or breakjoints
+-- 3 - breakjoints
+simrad = true --sets simulation radius
+
+--Properties:
+
+Idklol.Name = "Idklol"
+Idklol.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ActualUI.Name = "ActualUI"
+ActualUI.Parent = Idklol
+ActualUI.Active = true
+ActualUI.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+ActualUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ActualUI.BorderSizePixel = 0
+ActualUI.Position = UDim2.new(0.261487961, 0, 0.236476034, 0)
+ActualUI.Size = UDim2.new(0, 436, 0, 227)
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = ActualUI
+
+SeparatorThingy.Name = "SeparatorThingy"
+SeparatorThingy.Parent = ActualUI
+SeparatorThingy.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+SeparatorThingy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SeparatorThingy.BorderSizePixel = 0
+SeparatorThingy.Position = UDim2.new(6.99944422e-08, 0, 0.0792951509, 0)
+SeparatorThingy.Size = UDim2.new(0, 436, 0, 1)
+
+Close.Name = "Close"
+Close.Parent = ActualUI
+Close.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.938073456, 0, 0, 0)
+Close.Size = UDim2.new(0, 19, 0, 18)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(209, 0, 0)
+Close.TextSize = 14.000
+
+UICorner_2.Parent = Close
+
+Title.Name = "Title"
+Title.Parent = ActualUI
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.270642191, 0, 0.00440528616, 0)
+Title.Size = UDim2.new(0, 200, 0, 15)
+Title.Font = Enum.Font.Highway
+Title.Text = "Genesis FE Loader"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 14.000
+
+News.Name = "News"
+News.Parent = ActualUI
+News.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+News.BorderColor3 = Color3.fromRGB(0, 0, 0)
+News.BorderSizePixel = 0
+News.Size = UDim2.new(0, 22, 0, 18)
+News.Font = Enum.Font.SourceSans
+News.Text = ""
+News.TextColor3 = Color3.fromRGB(0, 0, 0)
+News.TextSize = 14.000
+
+UICorner_3.Parent = News
+
+ButtonsOrSomething.Name = "ButtonsOrSomething"
+ButtonsOrSomething.Parent = ActualUI
+ButtonsOrSomething.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonsOrSomething.BackgroundTransparency = 1.000
+ButtonsOrSomething.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonsOrSomething.BorderSizePixel = 0
+ButtonsOrSomething.Position = UDim2.new(6.99944422e-08, 0, 0.0837004408, 0)
+ButtonsOrSomething.Size = UDim2.new(0, 436, 0, 22)
+
+MeleeButton.Name = "MeleeButton"
+MeleeButton.Parent = ButtonsOrSomething
+MeleeButton.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+MeleeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MeleeButton.BorderSizePixel = 0
+MeleeButton.Position = UDim2.new(0.298165143, 0, 0.110132389, 0)
+MeleeButton.Size = UDim2.new(0, 67, 0, 17)
+MeleeButton.Font = Enum.Font.Highway
+MeleeButton.Text = "Melee"
+MeleeButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MeleeButton.TextSize = 14.000
+
+UICorner_4.Parent = MeleeButton
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = ButtonsOrSomething
+HomeButton.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+HomeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeButton.BorderSizePixel = 0
+HomeButton.Position = UDim2.new(0.0963302776, 0, 0.110132389, 0)
+HomeButton.Size = UDim2.new(0, 67, 0, 17)
+HomeButton.Font = Enum.Font.Highway
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HomeButton.TextSize = 14.000
+
+UICorner_5.Parent = HomeButton
+
+RangedButton.Name = "RangedButton"
+RangedButton.Parent = ButtonsOrSomething
+RangedButton.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+RangedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RangedButton.BorderSizePixel = 0
+RangedButton.Position = UDim2.new(0.521137595, 0, 0.109999917, 0)
+RangedButton.Size = UDim2.new(0, 67, 0, 17)
+RangedButton.Font = Enum.Font.Highway
+RangedButton.Text = "Ranged"
+RangedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+RangedButton.TextSize = 14.000
+
+UICorner_6.Parent = RangedButton
+
+OthersButton.Name = "OthersButton"
+OthersButton.Parent = ButtonsOrSomething
+OthersButton.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+OthersButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OthersButton.BorderSizePixel = 0
+OthersButton.Position = UDim2.new(0.72783488, 0, 0.109999917, 0)
+OthersButton.Size = UDim2.new(0, 67, 0, 17)
+OthersButton.Font = Enum.Font.Highway
+OthersButton.Text = "Others"
+OthersButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OthersButton.TextSize = 14.000
+
+UICorner_7.Parent = OthersButton
+
+Tabs.Name = "Tabs"
+Tabs.Parent = ActualUI
+Tabs.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Tabs.BackgroundTransparency = 1.000
+Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(6.99944422e-08, 0, 0.198237881, 0)
+Tabs.Size = UDim2.new(0, 436, 0, 182)
+
+Melee.Name = "Melee"
+Melee.Parent = Tabs
+Melee.Active = true
+Melee.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Melee.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Melee.BorderSizePixel = 0
+Melee.Position = UDim2.new(0.0160550456, 0, 0, 0)
+Melee.Size = UDim2.new(0, 421, 0, 167)
+Melee.Visible = false
+Melee.BottomImage = ""
+Melee.MidImage = ""
+Melee.TopImage = ""
+
+Goner.Name = "Goner"
+Goner.Parent = Melee
+Goner.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+Goner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Goner.BorderSizePixel = 0
+Goner.Position = UDim2.new(0.0329999998, 0, 0.0250000004, 0)
+Goner.Size = UDim2.new(0, 110, 0, 34)
+Goner.Font = Enum.Font.Cartoon
+Goner.Text = "Goner"
+Goner.TextColor3 = Color3.fromRGB(0, 0, 0)
+Goner.TextSize = 14.000
+
+UICorner_8.Parent = Goner
+
+LinkedSword.Name = "LinkedSword"
+LinkedSword.Parent = Melee
+LinkedSword.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+LinkedSword.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LinkedSword.BorderSizePixel = 0
+LinkedSword.Position = UDim2.new(0.370000005, 0, 0.0250000004, 0)
+LinkedSword.Size = UDim2.new(0, 110, 0, 34)
+LinkedSword.Font = Enum.Font.Cartoon
+LinkedSword.Text = "Linked Sword"
+LinkedSword.TextColor3 = Color3.fromRGB(0, 0, 0)
+LinkedSword.TextSize = 14.000
+
+UICorner_9.Parent = LinkedSword
+
+GaleFighter.Name = "GaleFighter"
+GaleFighter.Parent = Melee
+GaleFighter.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+GaleFighter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GaleFighter.BorderSizePixel = 0
+GaleFighter.Position = UDim2.new(0.707000017, 0, 0.0250000004, 0)
+GaleFighter.Size = UDim2.new(0, 110, 0, 34)
+GaleFighter.Font = Enum.Font.Cartoon
+GaleFighter.Text = "Gale Fighter"
+GaleFighter.TextColor3 = Color3.fromRGB(0, 0, 0)
+GaleFighter.TextSize = 14.000
+
+UICorner_10.Parent = GaleFighter
+
+BanHammer.Name = "BanHammer"
+BanHammer.Parent = Melee
+BanHammer.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+BanHammer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BanHammer.BorderSizePixel = 0
+BanHammer.Position = UDim2.new(0.0324156135, 0, 0.166567504, 0)
+BanHammer.Size = UDim2.new(0, 110, 0, 34)
+BanHammer.Font = Enum.Font.Cartoon
+BanHammer.Text = "Ban Hammer"
+BanHammer.TextColor3 = Color3.fromRGB(0, 0, 0)
+BanHammer.TextSize = 14.000
+
+UICorner_11.Parent = BanHammer
+
+NeptunianV.Name = "NeptunianV"
+NeptunianV.Parent = Melee
+NeptunianV.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+NeptunianV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NeptunianV.BorderSizePixel = 0
+NeptunianV.Position = UDim2.new(0.370000005, 0, 0.166999996, 0)
+NeptunianV.Size = UDim2.new(0, 110, 0, 34)
+NeptunianV.Font = Enum.Font.Cartoon
+NeptunianV.Text = "Neptunian V"
+NeptunianV.TextColor3 = Color3.fromRGB(0, 0, 0)
+NeptunianV.TextSize = 14.000
+
+UICorner_12.Parent = NeptunianV
+
+KrystalDance.Name = "KrystalDance"
+KrystalDance.Parent = Melee
+KrystalDance.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+KrystalDance.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KrystalDance.BorderSizePixel = 0
+KrystalDance.Position = UDim2.new(0.707000017, 0, 0.166999996, 0)
+KrystalDance.Size = UDim2.new(0, 110, 0, 34)
+KrystalDance.Font = Enum.Font.Cartoon
+KrystalDance.Text = "Krystal Dance"
+KrystalDance.TextColor3 = Color3.fromRGB(0, 0, 0)
+KrystalDance.TextSize = 14.000
+
+UICorner_13.Parent = KrystalDance
+
+GoodCopBadCop.Name = "GoodCopBadCop"
+GoodCopBadCop.Parent = Melee
+GoodCopBadCop.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+GoodCopBadCop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GoodCopBadCop.BorderSizePixel = 0
+GoodCopBadCop.Position = UDim2.new(0.0320000015, 0, 0.308999985, 0)
+GoodCopBadCop.Size = UDim2.new(0, 110, 0, 34)
+GoodCopBadCop.Font = Enum.Font.Cartoon
+GoodCopBadCop.Text = "Good Cop Bad Cop"
+GoodCopBadCop.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoodCopBadCop.TextSize = 14.000
+
+UICorner_14.Parent = GoodCopBadCop
+
+StarGlitcher.Name = "StarGlitcher"
+StarGlitcher.Parent = Melee
+StarGlitcher.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+StarGlitcher.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StarGlitcher.BorderSizePixel = 0
+StarGlitcher.Position = UDim2.new(0.370000005, 0, 0.308999985, 0)
+StarGlitcher.Size = UDim2.new(0, 110, 0, 34)
+StarGlitcher.Font = Enum.Font.Cartoon
+StarGlitcher.Text = "Star Glitcher"
+StarGlitcher.TextColor3 = Color3.fromRGB(0, 0, 0)
+StarGlitcher.TextSize = 14.000
+
+UICorner_15.Parent = StarGlitcher
+
+Home.Name = "Home"
+Home.Parent = Tabs
+Home.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.0160000008, 0, 0, 0)
+Home.Size = UDim2.new(0, 421, 0, 167)
+
+UICorner_16.Parent = Home
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Home
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.327790976, 0, 0.0479041934, 0)
+Welcome.Size = UDim2.new(0, 146, 0, 19)
+Welcome.Font = Enum.Font.Cartoon
+Welcome.Text = "Welcome name"
+Welcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.TextSize = 21.000
+
+Changelog.Name = "Changelog"
+Changelog.Parent = Home
+Changelog.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+Changelog.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(0.695962012, 0, 0.161676645, 0)
+Changelog.Size = UDim2.new(0, 100, 0, 125)
+
+UICorner_17.Parent = Changelog
+
+TextLabel.Parent = Changelog
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 100, 0, 125)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "loading"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 12.000
+
+Frame.Parent = Home
+Frame.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.026128266, 0, 0.107784428, 0)
+Frame.Size = UDim2.new(0, 100, 0, 24)
+
+UICorner_18.Parent = Frame
+
+Version.Name = "Version"
+Version.Parent = Frame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 10.000
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Size = UDim2.new(0, 100, 0, 24)
+Version.Font = Enum.Font.Cartoon
+Version.Text = "loading"
+Version.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version.TextSize = 14.000
+
+ImageLabel.Parent = Home
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.382422805, 0, 0.311377257, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_19.CornerRadius = UDim.new(0, 50)
+UICorner_19.Parent = ImageLabel
+
+Ranged.Name = "Ranged"
+Ranged.Parent = Tabs
+Ranged.Active = true
+Ranged.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Ranged.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ranged.BorderSizePixel = 0
+Ranged.Position = UDim2.new(0.0160550456, 0, 0, 0)
+Ranged.Size = UDim2.new(0, 421, 0, 167)
+Ranged.Visible = false
+Ranged.BottomImage = ""
+Ranged.MidImage = ""
+Ranged.TopImage = ""
+
+Sniper.Name = "Sniper"
+Sniper.Parent = Ranged
+Sniper.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+Sniper.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sniper.BorderSizePixel = 0
+Sniper.Position = UDim2.new(0.0329999998, 0, 0.0250000004, 0)
+Sniper.Size = UDim2.new(0, 110, 0, 34)
+Sniper.Font = Enum.Font.Cartoon
+Sniper.Text = "Sniper"
+Sniper.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sniper.TextSize = 14.000
+
+UICorner_20.Parent = Sniper
+
+SadistGenocider.Name = "SadistGenocider"
+SadistGenocider.Parent = Ranged
+SadistGenocider.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+SadistGenocider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SadistGenocider.BorderSizePixel = 0
+SadistGenocider.Position = UDim2.new(0.370000005, 0, 0.0250000004, 0)
+SadistGenocider.Size = UDim2.new(0, 110, 0, 34)
+SadistGenocider.Font = Enum.Font.Cartoon
+SadistGenocider.Text = "Sadist Genocider"
+SadistGenocider.TextColor3 = Color3.fromRGB(0, 0, 0)
+SadistGenocider.TextSize = 14.000
+
+UICorner_21.Parent = SadistGenocider
+
+Minigun.Name = "Minigun"
+Minigun.Parent = Ranged
+Minigun.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+Minigun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Minigun.BorderSizePixel = 0
+Minigun.Position = UDim2.new(0.707000017, 0, 0.0250000004, 0)
+Minigun.Size = UDim2.new(0, 110, 0, 34)
+Minigun.Font = Enum.Font.Cartoon
+Minigun.Text = "Minigun"
+Minigun.TextColor3 = Color3.fromRGB(0, 0, 0)
+Minigun.TextSize = 14.000
+
+UICorner_22.Parent = Minigun
+
+PuppetMaster.Name = "PuppetMaster"
+PuppetMaster.Parent = Ranged
+PuppetMaster.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+PuppetMaster.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PuppetMaster.BorderSizePixel = 0
+PuppetMaster.Position = UDim2.new(0.0324156135, 0, 0.166567504, 0)
+PuppetMaster.Size = UDim2.new(0, 110, 0, 34)
+PuppetMaster.Font = Enum.Font.Cartoon
+PuppetMaster.Text = "Puppet Master"
+PuppetMaster.TextColor3 = Color3.fromRGB(0, 0, 0)
+PuppetMaster.TextSize = 14.000
+
+UICorner_23.Parent = PuppetMaster
+
+Dearsister.Name = "Dearsister"
+Dearsister.Parent = Ranged
+Dearsister.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+Dearsister.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dearsister.BorderSizePixel = 0
+Dearsister.Position = UDim2.new(0.370000005, 0, 0.166999996, 0)
+Dearsister.Size = UDim2.new(0, 110, 0, 34)
+Dearsister.Font = Enum.Font.Cartoon
+Dearsister.Text = "Dearsister"
+Dearsister.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dearsister.TextSize = 14.000
+
+UICorner_24.Parent = Dearsister
+
+AK47.Name = "AK47"
+AK47.Parent = Ranged
+AK47.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+AK47.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AK47.BorderSizePixel = 0
+AK47.Position = UDim2.new(0.707000017, 0, 0.166999996, 0)
+AK47.Size = UDim2.new(0, 110, 0, 34)
+AK47.Font = Enum.Font.Cartoon
+AK47.Text = "AK-47"
+AK47.TextColor3 = Color3.fromRGB(0, 0, 0)
+AK47.TextSize = 14.000
+
+UICorner_25.Parent = AK47
+
+StudioDummy.Name = "StudioDummy"
+StudioDummy.Parent = Ranged
+StudioDummy.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+StudioDummy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StudioDummy.BorderSizePixel = 0
+StudioDummy.Position = UDim2.new(0.0320000015, 0, 0.308999985, 0)
+StudioDummy.Size = UDim2.new(0, 110, 0, 34)
+StudioDummy.Font = Enum.Font.Cartoon
+StudioDummy.Text = "Studio Dummy"
+StudioDummy.TextColor3 = Color3.fromRGB(0, 0, 0)
+StudioDummy.TextSize = 14.000
+
+UICorner_26.Parent = StudioDummy
+
+LightingCannon.Name = "LightingCannon"
+LightingCannon.Parent = Ranged
+LightingCannon.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+LightingCannon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LightingCannon.BorderSizePixel = 0
+LightingCannon.Position = UDim2.new(0.370000005, 0, 0.308999985, 0)
+LightingCannon.Size = UDim2.new(0, 110, 0, 34)
+LightingCannon.Font = Enum.Font.Cartoon
+LightingCannon.Text = "Lighting Cannon"
+LightingCannon.TextColor3 = Color3.fromRGB(0, 0, 0)
+LightingCannon.TextSize = 14.000
+
+UICorner_27.Parent = LightingCannon
+
+Others.Name = "Others"
+Others.Parent = Tabs
+Others.Active = true
+Others.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Others.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Others.BorderSizePixel = 0
+Others.Position = UDim2.new(0.0160550456, 0, 0, 0)
+Others.Size = UDim2.new(0, 421, 0, 167)
+Others.Visible = false
+Others.BottomImage = ""
+Others.MidImage = ""
+Others.TopImage = ""
+
+Motorcycle.Name = "Motorcycle"
+Motorcycle.Parent = Others
+Motorcycle.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+Motorcycle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Motorcycle.BorderSizePixel = 0
+Motorcycle.Position = UDim2.new(0.0329999998, 0, 0.0250000004, 0)
+Motorcycle.Size = UDim2.new(0, 110, 0, 34)
+Motorcycle.Font = Enum.Font.Cartoon
+Motorcycle.Text = "Mortorcyle"
+Motorcycle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Motorcycle.TextSize = 14.000
+
+UICorner_28.Parent = Motorcycle
+
+OpenUI.Name = "OpenUI"
+OpenUI.Parent = Idklol
+OpenUI.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+OpenUI.BorderColor3 = Color3.fromRGB(33, 33, 33)
+OpenUI.BorderSizePixel = 0
+OpenUI.Position = UDim2.new(0.0142231947, 0, 0.255023181, 0)
+OpenUI.Size = UDim2.new(0, 52, 0, 53)
+OpenUI.Visible = false
+OpenUI.Font = Enum.Font.SourceSans
+OpenUI.Text = "Open"
+OpenUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenUI.TextSize = 14.000
+
+UICorner_29.CornerRadius = UDim.new(0, 25)
+UICorner_29.Parent = OpenUI
+
+News_2.Name = "News"
+News_2.Parent = Idklol
+News_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+News_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+News_2.BorderSizePixel = 0
+News_2.Position = UDim2.new(0.35557586, 0, 0.201700151, 0)
+News_2.Size = UDim2.new(0, 229, 0, 256)
+News_2.Visible = false
+
+UICorner_30.Parent = News_2
+
+Frame_2.Parent = News_2
+Frame_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.0703125, 0)
+Frame_2.Size = UDim2.new(0, 229, 0, 1)
+
+Close_2.Name = "Close"
+Close_2.Parent = News_2
+Close_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.89003861, 0, 0, 0)
+Close_2.Size = UDim2.new(0, 19, 0, 18)
+Close_2.Font = Enum.Font.FredokaOne
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(209, 0, 0)
+Close_2.TextSize = 14.000
+
+UICorner_31.Parent = Close_2
+
+title.Name = "title"
+title.Parent = News_2
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.262008727, 0, 0.00390625, 0)
+title.Size = UDim2.new(0, 109, 0, 18)
+title.Font = Enum.Font.Highway
+title.Text = "NEWS"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextSize = 14.000
+
+NewsIg.Name = "NewsIg"
+NewsIg.Parent = News_2
+NewsIg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NewsIg.BackgroundTransparency = 1.000
+NewsIg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NewsIg.BorderSizePixel = 0
+NewsIg.Position = UDim2.new(0.0131004369, 0, 0.09765625, 0)
+NewsIg.Size = UDim2.new(0, 226, 0, 223)
+NewsIg.Font = Enum.Font.SourceSans
+NewsIg.TextColor3 = Color3.fromRGB(0, 0, 0)
+NewsIg.TextSize = 14.000
+NewsIg.TextYAlignment = Enum.TextYAlignment.Top
+
+-- Scripts:
+
+local function VTGL_fake_script() -- Close.CloseGUI 
+	local script = Instance.new('LocalScript', Close)
+
+	guithing = script.Parent.Parent.Parent
+	closebutton = script.Parent
+	togglebutton = guithing:FindFirstChild("OpenUI")
+	
+	local function closeui()
+		guithing.ActualUI.Visible = false
+		togglebutton.Visible = true
+	end
+	
+	closebutton.MouseButton1Click:Connect(closeui)
+end
+coroutine.wrap(VTGL_fake_script)()
+local function UBGHKMZ_fake_script() -- News.OpenNews 
+	local script = Instance.new('LocalScript', News)
+
+	opennewsbutton = script.Parent
+	newsframethingyidkanymorepleasesendhelp = script.Parent.Parent.Parent:FindFirstChild("News")
+	
+	local function news()
+		newsframethingyidkanymorepleasesendhelp.Visible = true
+	end
+	
+	opennewsbutton.MouseButton1Click:Connect(news)
+end
+coroutine.wrap(UBGHKMZ_fake_script)()
+local function LAQW_fake_script() -- ActualUI.LocalScript 
+	local script = Instance.new('LocalScript', ActualUI)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(LAQW_fake_script)()
+local function HJZKC_fake_script() -- MeleeButton.LocalScript 
+	local script = Instance.new('LocalScript', MeleeButton)
+
+	otherthing = script.Parent.Parent.Parent:FindFirstChild("Tabs")
+	button = script.Parent
+	home = otherthing:FindFirstChild("Home")
+	melee = otherthing:FindFirstChild("Melee")
+	ranged = otherthing:FindFirstChild("Ranged")
+	
+	local function tab()
+		home.Visible = false
+		melee.Visible = true
+		ranged.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(tab)
+end
+coroutine.wrap(HJZKC_fake_script)()
+local function DZXXC_fake_script() -- HomeButton.LocalScript 
+	local script = Instance.new('LocalScript', HomeButton)
+
+	otherthing = script.Parent.Parent.Parent:FindFirstChild("Tabs")
+	button = script.Parent
+	home = otherthing:FindFirstChild("Home")
+	melee = otherthing:FindFirstChild("Melee")
+	ranged = otherthing:FindFirstChild("Ranged")
+	
+	local function tab()
+		home.Visible = true
+		melee.Visible = false
+		ranged.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(tab)
+end
+coroutine.wrap(DZXXC_fake_script)()
+local function VBKM_fake_script() -- RangedButton.LocalScript 
+	local script = Instance.new('LocalScript', RangedButton)
+
+	otherthing = script.Parent.Parent.Parent:FindFirstChild("Tabs")
+	button = script.Parent
+	home = otherthing:FindFirstChild("Home")
+	melee = otherthing:FindFirstChild("Melee")
+	ranged = otherthing:FindFirstChild("Ranged")
+	
+	local function tab()
+		home.Visible = false
+		melee.Visible = false
+		ranged.Visible = true
+	end
+	
+	button.MouseButton1Click:Connect(tab)
+end
+coroutine.wrap(VBKM_fake_script)()
+local function HJEZJ_fake_script() -- OthersButton.LocalScript 
+	local script = Instance.new('LocalScript', OthersButton)
+
+	otherthing = script.Parent.Parent.Parent:FindFirstChild("Tabs")
+	button = script.Parent
+	home = otherthing:FindFirstChild("Home")
+	melee = otherthing:FindFirstChild("Melee")
+	ranged = otherthing:FindFirstChild("Ranged")
+	
+	local function tab()
+		home.Visible = false
+		melee.Visible = false
+		ranged.Visible = true
+	end
+	
+	button.MouseButton1Click:Connect(tab)
+end
+coroutine.wrap(HJEZJ_fake_script)()
+local function UDVN_fake_script() -- Goner.LocalScript 
+	local script = Instance.new('LocalScript', Goner)
+
+	local button = script.Parent
+	
+	local function Goner()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Goner"))()
+	end
+	
+	button.MouseButton1Click:Connect(Goner)
+end
+coroutine.wrap(UDVN_fake_script)()
+local function RLKABBF_fake_script() -- LinkedSword.LocalScript 
+	local script = Instance.new('LocalScript', LinkedSword)
+
+	local button = script.Parent
+	
+	local function LinkedSword()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Linked%20Sword"))()
+	end
+	
+	button.MouseButton1Click:Connect(LinkedSword)
+end
+coroutine.wrap(RLKABBF_fake_script)()
+local function OAMWR_fake_script() -- GaleFighter.LocalScript 
+	local script = Instance.new('LocalScript', GaleFighter)
+
+	local button = script.Parent
+	
+	local function GaleFighter()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
+	end
+	
+	button.MouseButton1Click:Connect(GaleFighter)
+end
+coroutine.wrap(OAMWR_fake_script)()
+local function CDLNAS_fake_script() -- BanHammer.LocalScript 
+	local script = Instance.new('LocalScript', BanHammer)
+
+	local button = script.Parent
+	
+	local function BanHammer()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Ban%20Hammer"))()
+	end
+	
+	button.MouseButton1Click:Connect(BanHammer)
+end
+coroutine.wrap(CDLNAS_fake_script)()
+local function EOXCCOQ_fake_script() -- NeptunianV.LocalScript 
+	local script = Instance.new('LocalScript', NeptunianV)
+
+	local button = script.Parent
+	
+	local function NeptunianV()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+	end
+	
+	button.MouseButton1Click:Connect(NeptunianV)
+end
+coroutine.wrap(EOXCCOQ_fake_script)()
+local function QALS_fake_script() -- KrystalDance.LocalScript 
+	local script = Instance.new('LocalScript', KrystalDance)
+
+	local button = script.Parent
+	
+	local function KrystalDance()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
+	end
+	
+	button.MouseButton1Click:Connect(KrystalDance)
+end
+coroutine.wrap(QALS_fake_script)()
+local function MYHJJDS_fake_script() -- GoodCopBadCop.LocalScript 
+	local script = Instance.new('LocalScript', GoodCopBadCop)
+
+	local button = script.Parent
+	
+	local function GoodCopBadCop()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Good%20Cop%20Bad%20Cop"))()
+	end
+	
+	button.MouseButton1Click:Connect(GoodCopBadCop)
+end
+coroutine.wrap(MYHJJDS_fake_script)()
+local function QHSNREX_fake_script() -- StarGlitcher.LocalScript 
+	local script = Instance.new('LocalScript', StarGlitcher)
+
+	local button = script.Parent
+	
+	local function StarGlitcher()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Star%20Glitcher"))()
+	end
+	
+	button.MouseButton1Click:Connect(StarGlitcher)
+end
+coroutine.wrap(QHSNREX_fake_script)()
+local function AYNXMV_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	local player = game.Players.LocalPlayer
+	local display = player.DisplayName
+	
+	script.Parent.Text = "Welcome "..display.."!"
+end
+coroutine.wrap(AYNXMV_fake_script)()
+local function UYDYBAO_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent.Text = [[Changelog:
+	+ Remade the gui
+	+ New scripts]]
+end
+coroutine.wrap(UYDYBAO_fake_script)()
+local function TFDI_fake_script() -- Version.LocalScript 
+	local script = Instance.new('LocalScript', Version)
+
+	script.Parent.Text = "Version: 0.1"
+end
+coroutine.wrap(TFDI_fake_script)()
+local function DXLB_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local player = game.Players.LocalPlayer
+	local players = game.Players
+	
+	script.Parent.Image = players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(DXLB_fake_script)()
+local function NXPGFF_fake_script() -- Sniper.LocalScript 
+	local script = Instance.new('LocalScript', Sniper)
+
+	local button = script.Parent
+	
+	local function Sniper()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+	end
+	
+	button.MouseButton1Click:Connect(Sniper)
+end
+coroutine.wrap(NXPGFF_fake_script)()
+local function HQOZNU_fake_script() -- SadistGenocider.LocalScript 
+	local script = Instance.new('LocalScript', SadistGenocider)
+
+	local button = script.Parent
+	
+	local function SadistGenocider()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sadist%20Genocider"))()
+	end
+	
+	button.MouseButton1Click:Connect(SadistGenocider)
+end
+coroutine.wrap(HQOZNU_fake_script)()
+local function SMIBXZ_fake_script() -- Minigun.LocalScript 
+	local script = Instance.new('LocalScript', Minigun)
+
+	local button = script.Parent
+	
+	local function Minigun()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Minigun"))()
+	end
+	
+	button.MouseButton1Click:Connect(Minigun)
+end
+coroutine.wrap(SMIBXZ_fake_script)()
+local function FCCZM_fake_script() -- PuppetMaster.LocalScript 
+	local script = Instance.new('LocalScript', PuppetMaster)
+
+	local button = script.Parent
+	
+	local function PuppetMaster()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Puppet%20Master"))()
+	end
+	
+	button.MouseButton1Click:Connect(PuppetMaster)
+end
+coroutine.wrap(FCCZM_fake_script)()
+local function SIUD_fake_script() -- Dearsister.LocalScript 
+	local script = Instance.new('LocalScript', Dearsister)
+
+	local button = script.Parent
+	
+	local function Dearsister()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Dearsister"))()
+	end
+	
+	button.MouseButton1Click:Connect(Dearsister)
+end
+coroutine.wrap(SIUD_fake_script)()
+local function UAMX_fake_script() -- AK47.LocalScript 
+	local script = Instance.new('LocalScript', AK47)
+
+	local button = script.Parent
+	
+	local function AK47()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/AK-47"))()
+	end
+	
+	button.MouseButton1Click:Connect(AK47)
+end
+coroutine.wrap(UAMX_fake_script)()
+local function CDIL_fake_script() -- StudioDummy.LocalScript 
+	local script = Instance.new('LocalScript', StudioDummy)
+
+	local button = script.Parent
+	
+	local function StudioDummy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Studio%20Dummy"))()
+	end
+	
+	button.MouseButton1Click:Connect(StudioDummy)
+end
+coroutine.wrap(CDIL_fake_script)()
+local function REIK_fake_script() -- LightingCannon.LocalScript 
+	local script = Instance.new('LocalScript', LightingCannon)
+
+	local button = script.Parent
+	
+	local function LightingCannon()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Lightning%20Cannon"))()
+	end
+	
+	button.MouseButton1Click:Connect(LightingCannon)
+end
+coroutine.wrap(REIK_fake_script)()
+local function GEXZDG_fake_script() -- Motorcycle.LocalScript 
+	local script = Instance.new('LocalScript', Motorcycle)
+
+	local button = script.Parent
+	
+	local function Motorcycle()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Motorcycle"))()
+	end
+	
+	button.MouseButton1Click:Connect(Motorcycle)
+end
+coroutine.wrap(GEXZDG_fake_script)()
+local function CBSSBPS_fake_script() -- OpenUI.OpenGUI 
+	local script = Instance.new('LocalScript', OpenUI)
+
+	guithing = script.Parent.Parent
+	togglebutton = script.Parent
+	
+	togglebutton.Draggable = true
+	
+	local function openui()
+		guithing.ActualUI.Visible = true
+		togglebutton.Visible = false
+	end
+	
+	togglebutton.MouseButton1Click:Connect(openui)
+end
+coroutine.wrap(CBSSBPS_fake_script)()
+local function TTKXQKW_fake_script() -- Close_2.CloseGUI 
+	local script = Instance.new('LocalScript', Close_2)
+
+	newsthingy = script.Parent.Parent
+	buttonlol = script.Parent
+	
+	local function closeui()
+		newsthingy.Visible = false
+	end
+	
+	buttonlol.MouseButton1Click:Connect(closeui)
+end
+coroutine.wrap(TTKXQKW_fake_script)()
+local function JRZT_fake_script() -- NewsIg.LocalScript 
+	local script = Instance.new('LocalScript', NewsIg)
+
+	script.Parent.Text = [[fuck you labels
+	useless shit wont wrap
+	just add new lines :(]]
+end
+coroutine.wrap(JRZT_fake_script)()
