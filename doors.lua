@@ -1,35 +1,6 @@
-if not ExecutorSupport then print("[YEHAX] Loading stopped, please use the official loadstring for YEHAX. (ERROR: ExecutorSupport == nil)") return end
-if getgenv().mspaint_loaded then print("[YEHAX] Loading stopped. (ERROR: Already loaded)") return end
-getgenv().mspaint_loaded = true
-
-
-local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
-local Notify = AkaliNotif.Notify;
-
-wait(1);
-
-Notify({
-Description = "你的注入器:"..identifyexecutor();
-Title = "YEHAX执行成功!";
-Duration = 2;
-});
-
-wait(2);
-
-Notify({
-Description = "QQ群:暂无";
-Title = "YEHAX Team:";
-Duration = 4;
-});
-
-wait(1);
-
-Notify({
-Description = "加载中..";
-Title = "YEHAX V3.3版本!";
-Duration = 2;
-});
-
+if not getgenv().mspaint_loaded then
+    getgenv().mspaint_loaded = true
+else return end
 
 --// Services \\--
 local Lighting = game:GetService("Lighting")
