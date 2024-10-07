@@ -5950,6 +5950,3 @@ SaveManager:BuildConfigSection(Tabs["UI Settings"])
 ThemeManager:ApplyToTab(Tabs["UI Settings"])
 
 SaveManager:LoadAutoloadConfig()
-
-Script.Functions.UpdateRPC()
-getgenv().mspaint_loaded = true
