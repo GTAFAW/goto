@@ -217,7 +217,7 @@ local WarningGuiThread = task.spawn(function()
     Title.Position = UDim2.new(0, 15, 0, -12)
     Title.Size = UDim2.new(0, 75, 0, 20)
     Title.Font = Enum.Font.SourceSansBold
-    Title.Text = "Warning"
+    Title.Text = "xgo留言"
     Title.TextColor3 = Color3.fromRGB(235, 235, 235)
     Title.TextScaled = true
     Title.TextWrapped = true
@@ -239,7 +239,7 @@ local WarningGuiThread = task.spawn(function()
     Reason_1.BorderSizePixel = 0
     Reason_1.Size = UDim2.new(1, 0, 0, 20)
     Reason_1.Font = Enum.Font.SourceSans
-    Reason_1.Text = "- TextChatService is enabled"
+    Reason_1.Text = "- 文本聊天服务已启用"
     Reason_1.TextColor3 = Color3.fromRGB(199, 40, 42)
     Reason_1.TextScaled = true
     Reason_1.TextWrapped = true
@@ -253,7 +253,7 @@ local WarningGuiThread = task.spawn(function()
     Reason_2.BorderSizePixel = 0
     Reason_2.Size = UDim2.new(1, 0, 0, 20)
     Reason_2.Font = Enum.Font.SourceSans
-    Reason_2.Text = "- Legacy chat module was not found"
+    Reason_2.Text = "- 找不到传统聊天模块"
     Reason_2.TextColor3 = Color3.fromRGB(199, 40, 42)
     Reason_2.TextScaled = true
     Reason_2.TextWrapped = true
@@ -267,7 +267,7 @@ local WarningGuiThread = task.spawn(function()
     Reason_3.BorderSizePixel = 0
     Reason_3.Size = UDim2.new(1, 0, 0, 20)
     Reason_3.Font = Enum.Font.SourceSans
-    Reason_3.Text = "- MessagePosted function was not found"
+    Reason_3.Text = "- 未找到消息发布的功能"
     Reason_3.TextColor3 = Color3.fromRGB(199, 40, 42)
     Reason_3.TextScaled = true
     Reason_3.TextWrapped = true
@@ -283,7 +283,7 @@ local WarningGuiThread = task.spawn(function()
     WarningText.RichText = true
     WarningText.Size = UDim2.new(1, -30, 0, 20)
     WarningText.Font = Enum.Font.SourceSans
-    WarningText.Text = "> Anti-<font color=\"#6ea644\">Chat Logger</font> will not work here!"
+    WarningText.Text = "> 反-<font color=\"#6ea644\">Chat Logger</font>（聊天记录） 在这里不起作用!"
     WarningText.TextColor3 = Color3.fromRGB(255, 255, 255)
     WarningText.TextScaled = true
     WarningText.TextWrapped = true
@@ -297,7 +297,7 @@ local WarningGuiThread = task.spawn(function()
     Exit.Position = UDim2.new(.5, 0, .899999976, 0)
     Exit.Size = UDim2.new(0, 250, 0, 20)
     Exit.Font = Enum.Font.SourceSans
-    Exit.Text = "Ok"
+    Exit.Text = "好的（𝓓𝓮𝓐𝓡 xgo）"
     Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
     Exit.TextScaled = true
     Exit.TextWrapped = true
@@ -309,7 +309,7 @@ local WarningGuiThread = task.spawn(function()
     ImageLabel.Position = UDim2.new(.5, 0, .6, 0)
     ImageLabel.Size = UDim2.new(.3, 0, .3, 0)
     ImageLabel.ZIndex = 1
-    ImageLabel.Image = "rbxassetid://12969025384"
+    ImageLabel.Image = "rbxassetid://18923878915"
     ImageLabel.ImageColor3 = Color3.fromRGB(40, 40, 40)
     ImageLabel.ImageTransparency = .5
     
@@ -482,5 +482,5 @@ if CoreHook then
 end
 setreadonly(Metatable, true)
 
-Notify(NotificationTitle, "Anti Chat & Screenshot Logger Loaded!", 15)
-print(string.format("AnthonyIsntHere's Anti Chat-Logger has loaded in %s seconds.", string.format("%.2f", tostring(tick() - ACL_LoadTime))))
+Notify(NotificationTitle, "反聊天和屏幕截图记录器加载! xgo", 15)
+print(string.format("AnthonyIsntHere's Anti Chat-Logger has loaded in %s seconds.", string.format("%.2f", tostring(tick() - xgo_LoadTime))))
