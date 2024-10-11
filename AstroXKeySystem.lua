@@ -7,7 +7,7 @@ CheckKey.MouseButton1Click:Connect(function()
         TextBox.Text = ""
         wait(1)
         ScreenGui:Destroy()
-        local AstroXUI = loadstring(game:HttpGet("https://gist.githubusercontent.com/SoyAdriYT/92148422df4426ab97aa8e279ed76f50/raw/150cbe1ae883287ca2cec89922dfcedeeebfea54/gistfile1.txt"))()
+        local AstroXUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/DrRay.txt"))()
 
 local Stats = game:GetService('Stats')
 
