@@ -1,6 +1,6 @@
 
 
-CheckKey.MouseButton1Click:Connect(function()
+--[[CheckKey.MouseButton1Click:Connect(function()
     local enteredKey = TextBox.Text
     if validateKey(enteredKey) then
         TextBox.PlaceholderText = "Correct Key!"
@@ -648,7 +648,40 @@ end)
 
 local gameName = success and gameInfo.Name or "Unknown Game"
 
-local Window = AstroXUI:Window(Title1, gameName)
+local Window = AstroXUI:Window(Title1, gameName) ]]
+
+local IMAGE = "rbxassetid://16060333448"
+local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
+local Sizes = UDim2.new(0, 76, 0, 70)
+
+local KINGHUBMOBILE = Instance.new("ScreenGui")
+local _100x100 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+
+KINGHUBMOBILE.Name = "LinniScriptcharge"
+KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
+KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_100x100.Name = "100x100"
+_100x100.Parent = KINGHUBMOBILE
+_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100x100.Position = Positions
+_100x100.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = _100x100
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Size = Sizes
+ImageButton.Image = IMAGE
+ImageButton.MouseButton1Down:connect(function()
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(true, "RightControl", false, game)
+
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(false, "RightControl", false, game)
+end)
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
+local win = UILib:Window("小go刀刃球",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+
 
 local Tab = Window:Tab("Home")
 local Tab2 = Window:Tab("Player")
@@ -1471,90 +1504,3 @@ Tab7:Dropdown("Anti Crash", {"Disable", "Anti Crash Basic", "Anti Crash Pro", "A
     end
 end)
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/SoyAdriYT/AstroX/main/LibraryUI/UI_Notification.lua')))()
-
-local warningIcon = "rbxassetid://7072718362"
-local fpsWarningGiven = false
-local pingWarningGiven = false
-local timeSinceFPSWarning = 0
-local timeSincePingWarning = 0
-local interval = 300
-
-function createNotification(title, text)
-    OrionLib:MakeNotification({
-        Name = title,
-        Content = text,
-        Image = warningIcon,
-        Time = 5
-    })
-end
-
-game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
-    local fps = workspace:GetRealPhysicsFPS()
-    local ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
-
-    if fps < 50 then
-        if not fpsWarningGiven then
-            createNotification("FPS Warning", "FPS dropped to 50, this may cause issues with auto parry.")
-            fpsWarningGiven = true
-            timeSinceFPSWarning = 0
-        else
-            timeSinceFPSWarning = timeSinceFPSWarning + deltaTime
-            if timeSinceFPSWarning >= interval then
-                createNotification("FPS Warning", "FPS are still below 50 after 5 minutes. Auto parry may be affected.")
-                timeSinceFPSWarning = 0
-            end
-        end
-    end
-
-    if ping > 90 then
-        if not pingWarningGiven then
-            createNotification("Ping Warning", "Ping over 90 may cause issues with auto parry.")
-            pingWarningGiven = true
-            timeSincePingWarning = 0
-        else
-            timeSincePingWarning = timeSincePingWarning + deltaTime
-            if timeSincePingWarning >= interval then
-                createNotification("Ping Warning", "Ping is still above 90 after 5 minutes. Auto parry may be affected.")
-                timeSincePingWarning = 0
-            end
-        end
-    end
-end)
-
-local ScreenGui = Instance.new("ScreenGui")
-local ImageButton = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-
-for _, gui in pairs(game.CoreGui:GetChildren()) do
-    if gui:IsA("ScreenGui") and gui.Name == "ScreenGui" then
-        gui:Destroy()
-    end
-end
-
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
-ScreenGui.Name = "ScreenGui"
-
-ImageButton.Parent = ScreenGui
-ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ImageButton.Size = UDim2.new(0, 50, 0, 50)
-ImageButton.Draggable = true
-ImageButton.Image = ""
-ImageButton.ZIndex = 999
-
-UICorner.Parent = ImageButton
-UICorner.CornerRadius = UDim.new(0, 10)
-
-ImageButton.MouseButton1Down:Connect(function()
-    game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightControl", false, game)
-end)
-    else
-        TextBox.PlaceholderText = "Invalid key. Try again."
-        TextBox.Text = ""
-        wait(1)
-        TextBox.PlaceholderText = "Enter Key..."
-    end
-end)
