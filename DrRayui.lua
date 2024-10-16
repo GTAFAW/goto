@@ -1,7 +1,7 @@
--- Instances: 147 | Scripts: 0 | Modules: 1
+-- 实例：147 | 脚本：0 | 模块：1
 local DRR = {};
 
--- DrRay
+-- 德雷博士         ---xxxgo
 DRR["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 DRR["1"]["IgnoreGuiInset"] = true;
 DRR["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
@@ -18,17 +18,17 @@ DRR["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 DRR["2"]["Position"] = UDim2.new(0.23000000417232513, 0, -0.1899999976158142, 0);
 DRR["2"]["Name"] = [[TopBar]];
 
--- DrRay.TopBar.UICorner
+-- drray.topbar.ui角落
 DRR["3"] = Instance.new("UICorner", DRR["2"]);
 DRR["3"]["CornerRadius"] = UDim.new(0.10000000149011612, 0);
 
--- DrRay.TopBar.ScrollingFrame
+-- drray.topbar.scrolling框架
 DRR["4"] = Instance.new("ScrollingFrame", DRR["2"]);
 DRR["4"]["Active"] = true;
 DRR["4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 DRR["4"]["BorderSizePixel"] = 0;
 DRR["4"]["CanvasSize"] = UDim2.new(0.10000000149011612, 0, 0, 0);
-DRR["4"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 36);
+DRR["4"]["BackgroundColor3"] = Color3.fromRGB(1, 1, 1);
 DRR["4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
 DRR["4"]["BackgroundTransparency"] = 1;
 DRR["4"]["Size"] = UDim2.new(0.915977954864502, 0, 0.5196850299835205, 0);
@@ -37,18 +37,18 @@ DRR["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 DRR["4"]["ScrollBarThickness"] = 0;
 DRR["4"]["Position"] = UDim2.new(0, 0, 0.4803149700164795, 0);
 
--- DrRay.TopBar.ScrollingFrame.UIListLayout
+-- drray.topbar.scrolling frame.uilist布局
 DRR["5"] = Instance.new("UIListLayout", DRR["4"]);
 DRR["5"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
 DRR["5"]["FillDirection"] = Enum.FillDirection.Horizontal;
 DRR["5"]["Padding"] = UDim.new(0.009999999776482582, 0);
 DRR["5"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
--- DrRay.TopBar.ScrollingFrame.UIPadding
+-- drray.topbar.scrolling frame.uip添加
 DRR["6"] = Instance.new("UIPadding", DRR["4"]);
 DRR["6"]["PaddingLeft"] = UDim.new(0.014999999664723873, 0);
 
--- DrRay.TopBar.DropShadowHolder
+-- drray.topbar.dropshadow持有人
 DRR["7"] = Instance.new("Frame", DRR["2"]);
 DRR["7"]["ZIndex"] = 0;
 DRR["7"]["BorderSizePixel"] = 0;
@@ -56,7 +56,7 @@ DRR["7"]["BackgroundTransparency"] = 1;
 DRR["7"]["Size"] = UDim2.new(1, 0, 1, 0);
 DRR["7"]["Name"] = [[DropShadowHolder]];
 
--- DrRay.TopBar.DropShadowHolder.DropShadow
+-- drray.topbar.dropshadowholder.drop阴影
 DRR["8"] = Instance.new("ImageLabel", DRR["7"]);
 DRR["8"]["ZIndex"] = 0;
 DRR["8"]["BorderSizePixel"] = 0;
@@ -71,22 +71,22 @@ DRR["8"]["Name"] = [[DropShadow]];
 DRR["8"]["BackgroundTransparency"] = 1;
 DRR["8"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
--- DrRay.TopBar.UIGradient
+-- drray.topbar.ui渐变
 DRR["9"] = Instance.new("UIGradient", DRR["2"]);
 DRR["9"]["Rotation"] = 90;
 DRR["9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(139, 139, 139)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- DrRay.TopBar.TopBar
+-- drray顶酒吧顶酒吧
 DRR["a"] = Instance.new("Frame", DRR["2"]);
 DRR["a"]["BorderSizePixel"] = 0;
-DRR["a"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+DRR["a"]["BackgroundColor3"] = Color3.fromRGB(1, 1, 1);
 DRR["a"]["LayoutOrder"] = 2;
 DRR["a"]["Size"] = UDim2.new(0.9983566999435425, 0, 0.05511785298585892, 0);
 DRR["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 DRR["a"]["Position"] = UDim2.new(0, 0, 0.4645671844482422, 0);
 DRR["a"]["Name"] = [[TopBar]];
 
--- DrRay.TopBar.TopBar.UIGradient
+-- drray.topbar。 Top Bar.ui渐变
 DRR["b"] = Instance.new("UIGradient", DRR["a"]);
 DRR["b"]["Rotation"] = -90;
 DRR["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(139, 139, 139)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
@@ -94,7 +94,7 @@ DRR["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fr
 -- DrRay.TopBar.ProfileMenu
 DRR["c"] = Instance.new("Frame", DRR["2"]);
 DRR["c"]["BorderSizePixel"] = 0;
-DRR["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+DRR["c"]["BackgroundColor3"] = Color3.fromRGB(1, 1, 1);
 DRR["c"]["BackgroundTransparency"] = 1;
 DRR["c"]["Size"] = UDim2.new(0.9983566999435425, 0, 0.4645672142505646, 0);
 DRR["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -145,11 +145,11 @@ DRR["14"] = Instance.new("TextLabel", DRR["d"]);
 DRR["14"]["TextWrapped"] = true;
 DRR["14"]["BorderSizePixel"] = 0;
 DRR["14"]["TextScaled"] = true;
-DRR["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+DRR["14"]["BackgroundColor3"] = Color3.fromRGB(1, 1, 1);
 DRR["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 DRR["14"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 DRR["14"]["TextSize"] = 14;
-DRR["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+DRR["14"]["TextColor3"] = Color3.fromRGB(1, 0.5, 0.7);
 DRR["14"]["AutomaticSize"] = Enum.AutomaticSize.X;
 DRR["14"]["Size"] = UDim2.new(0.7192937135696411, 0, 0.41530051827430725, 0);
 DRR["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -192,10 +192,10 @@ DRR["1a"] = Instance.new("TextLabel", DRR["17"]);
 DRR["1a"]["TextWrapped"] = true;
 DRR["1a"]["BorderSizePixel"] = 0;
 DRR["1a"]["TextScaled"] = true;
-DRR["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+DRR["1a"]["BackgroundColor3"] = Color3.fromRGB(1, 1, 1);
 DRR["1a"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 DRR["1a"]["TextSize"] = 14;
-DRR["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+DRR["1a"]["TextColor3"] = Color3.fromRGB(1, 0.5, 0.7);
 DRR["1a"]["AutomaticSize"] = Enum.AutomaticSize.X;
 DRR["1a"]["Size"] = UDim2.new(0.33195531368255615, 0, 0.41530051827430725, 0);
 DRR["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
