@@ -1,0 +1,110 @@
+-- 标志要检查GUI是否应重新创建
+local guiClosed = false
+
+-- 功能创建GUI
+local function createGUI()
+    if guiClosed then return end
+
+    -- 创建screengui
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "xgo 简单执行器"
+    screenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+
+    -- 创建框架
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(0.5, 0, 0.5, 0) -- 尺寸略大
+    frame.Position = UDim2.new(0.13, 0, 0.13, 0)
+    frame.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
+    frame.Parent = screenGui
+
+    -- 使框架可拖动
+    frame.Active = true
+    frame.Draggable = true
+
+    -- 创建关闭按钮
+    local closeButton = Instance.new("TextButton")
+    closeButton.Size = UDim2.new(0, 30, 0, 30)
+    closeButton.Position = UDim2.new(1, -35, 0, 5)
+    closeButton.Text = "X"
+    closeButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- 红色
+    closeButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- 白色文本
+    closeButton.Parent = frame
+
+    -- 关闭GUI的功能
+    closeButton.MouseButton1Click:Connect(function()
+        guiClosed = true
+        screenGui:Destroy()
+    end)
+
+    -- 为TextBox创建滚动框架
+    local scrollingFrame = Instance.new("ScrollingFrame")
+    scrollingFrame.Size = UDim2.new(0.9, 0, 0.75, 0) 
+    scrollingFrame.Position = UDim2.new(0.05, 0, 0.15, 0)
+    scrollingFrame.CanvasSize = UDim2.new(0, 0, 10, 0) 
+    scrollingFrame.ScrollBarThickness = 10
+    scrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    scrollingFrame.Parent = frame
+
+    
+    local textBox = Instance.new("TextBox")
+    textBox.Size = UDim2.new(1, -10, 1, -10)
+    textBox.Position = UDim2.new(0, 5, 0, 5)
+    textBox.Text = ""
+    textBox.TextWrapped = true
+    textBox.TextSize = 18 -- Set a smaller text size
+    textBox.TextYAlignment = Enum.TextYAlignment.Top -- Align text to the top
+    textBox.TextXAlignment = Enum.TextXAlignment.Left -- Align text to the left
+    textBox.MultiLine = true -- Allow multiple lines
+    textBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    textBox.Parent = scrollingFrame
+
+    
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Size = UDim2.new(0.9, 0, 0.1, 0)
+    nameLabel.Position = UDim2.new(0.05, 0, 0.05, 0)
+    nameLabel.Text = "xgo 简单执行器"
+    nameLabel.TextScaled = true
+    nameLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    nameLabel.Parent = frame
+
+   
+    local executeButton = Instance.new("TextButton")
+    executeButton.Size = UDim2.new(0.4, 0, 0.15, 0)
+    executeButton.Position = UDim2.new(0.05, 0, 0.85, 0)
+    executeButton.Text = "执行"
+    executeButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) 
+    executeButton.Parent = frame
+
+    
+    local clearButton = Instance.new("TextButton")
+    clearButton.Size = UDim2.new(0.4, 0, 0.15, 0)
+    clearButton.Position = UDim2.new(0.55, 0, 0.85, 0)
+    clearButton.Text = "清除"
+    clearButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) 
+    clearButton.Parent = frame
+
+    
+    executeButton.MouseButton1Click:Connect(function()
+        local scriptSource = textBox.Text
+        local success, errorMessage = pcall(function()
+            loadstring(scriptSource)()
+        end)
+        if not success then
+            warn("Error executing script: " .. errorMessage)
+        end
+    end)
+
+    
+    clearButton.MouseButton1Click:Connect(function()
+        textBox.Text = ""
+    end)
+end
+
+
+createGUI()
+
+
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
+    createGUI()
+end)
