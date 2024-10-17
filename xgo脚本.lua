@@ -76,7 +76,7 @@ if IsOnMobile or VREnabled then
 	Sky["DaIcon"].Size = UDim2.new(0,45,0,45)
 	Sky["DaIcon"].Position = UDim2.new(.001,0,0.5,0)
 	Sky["DaIcon"].Draggable = true
-	Sky["DaIcon"].Image = "http://www.roblox.com/asset/?id=16710334936"
+	Sky["DaIcon"].Image = "http://www.roblox.com/asset/?id=18787314969"
 	Sky["DaIcon"].BackgroundColor3 = Color3.fromRGB(17, 36, 66)
 	Sky["das"] = Instance.new("UICorner", Sky["DaIcon"]);
 	Sky["das"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
