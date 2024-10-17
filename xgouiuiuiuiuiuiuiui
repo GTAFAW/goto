@@ -1,5 +1,5 @@
--- Made by luau
--- https://github.com/LLua-u/aw
+--负责xgo 游戏的ui
+--°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
 getgenv().SkyhubKeybind = Enum.KeyCode.RightControl
 local ScreenGui = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
@@ -78,7 +78,7 @@ if IsOnMobile or VREnabled then
 	Sky["DaIcon"].Size = UDim2.new(0,45,0,45)
 	Sky["DaIcon"].Position = UDim2.new(.001,0,0.5,0)
 	Sky["DaIcon"].Draggable = true
-	Sky["DaIcon"].Image = "http://www.roblox.com/asset/?id=16710334936"
+	Sky["DaIcon"].Image = "http://www.roblox.com/asset/?id=18923878915"
 	Sky["DaIcon"].BackgroundColor3 = Color3.fromRGB(17, 36, 66)
 	Sky["das"] = Instance.new("UICorner", Sky["DaIcon"]);
 	Sky["das"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
@@ -97,7 +97,7 @@ if game:WaitForChild("CoreGui") then
 else
 	ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-ScreenGui.Name = "skyhub"
+ScreenGui.Name = "xgo hub🥂"
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageLabel.Parent = ScreenGui
@@ -129,7 +129,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 200, 0, 40)
 TextLabel.FontFace = Font.new("rbxassetid://11702779409")
-TextLabel.Text = "Sky Hub"
+TextLabel.Text = "xgo hub🥂"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 25.000
 TextLabel.TextWrapped = true
