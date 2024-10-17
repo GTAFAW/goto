@@ -1,5 +1,3 @@
--- Made by luau
--- https://github.com/LLua-u/aw
 getgenv().SkyhubKeybind = Enum.KeyCode.RightControl
 local ScreenGui = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
