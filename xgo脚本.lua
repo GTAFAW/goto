@@ -76,7 +76,7 @@ if IsOnMobile or VREnabled then
 	Sky["DaIcon"].Size = UDim2.new(0,45,0,45)
 	Sky["DaIcon"].Position = UDim2.new(.001,0,0.5,0)
 	Sky["DaIcon"].Draggable = true
-	Sky["DaIcon"].Image = "http://www.roblox.com/asset/?id=18787314969"
+	Sky["DaIcon"].Image = "http://www.roblox.com/asset/?id=18923878915"
 	Sky["DaIcon"].BackgroundColor3 = Color3.fromRGB(17, 36, 66)
 	Sky["das"] = Instance.new("UICorner", Sky["DaIcon"]);
 	Sky["das"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
@@ -95,7 +95,7 @@ if game:WaitForChild("CoreGui") then
 else
 	ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-ScreenGui.Name = "skyhub"
+ScreenGui.Name = "xgohub"
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageLabel.Parent = ScreenGui
@@ -106,7 +106,7 @@ ImageLabel.BorderSizePixel = 0
 ImageLabel.ClipsDescendants = true
 ImageLabel.Position = UDim2.new(0.180995479, 0, 0.2781955, 0)
 ImageLabel.Size = UDim2.new(0, 550, 0, 300)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=16710334936"
+ImageLabel.Image = "http://www.roblox.com/asset/?id=18787314969"
 ImageLabel.ImageColor3 = Color3.fromRGB(89, 89, 89)
 ImageLabel.ImageTransparency = 0.150
 
@@ -127,7 +127,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 200, 0, 40)
 TextLabel.FontFace = Font.new("rbxassetid://11702779409")
-TextLabel.Text = "Sky Hub"
+TextLabel.Text = "xgo Hub"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 25.000
 TextLabel.TextWrapped = true
