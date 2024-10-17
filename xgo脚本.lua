@@ -95,7 +95,7 @@ if game:WaitForChild("CoreGui") then
 else
 	ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-ScreenGui.Name = "xgohub"
+ScreenGui.Name = "skyhub"
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageLabel.Parent = ScreenGui
@@ -127,7 +127,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 200, 0, 40)
 TextLabel.FontFace = Font.new("rbxassetid://11702779409")
-TextLabel.Text = "xgo Hub"
+TextLabel.Text = "sky Hub"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 25.000
 TextLabel.TextWrapped = true
