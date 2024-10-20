@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xgomn/eeeeeeeeeeeppppppppppppssassssssssss/refs/heads/main/xgo%20DOORS%20MS%E6%B1%89%E5%8C%96.lua"))()
