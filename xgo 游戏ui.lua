@@ -1188,7 +1188,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	GameNameZ.Size = UDim2.new(0, 123, 0, 23)
 	GameNameZ.ZIndex = 4
 	GameNameZ.Font = Enum.Font.Cartoon
-	GameNameZ.Text = "Setting"
+	GameNameZ.Text = "设置"
 	GameNameZ.TextColor3 = Color3.fromRGB(255, 170, 0)
 	GameNameZ.TextScaled = true
 	GameNameZ.TextSize = 14.000
@@ -1268,7 +1268,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	VideoText.Size = UDim2.new(0, 188, 0, 24)
 	VideoText.ZIndex = 4
 	VideoText.Font = Enum.Font.Cartoon
-	VideoText.Text = "  Video Background:"
+	VideoText.Text = "  视频背景:"
 	VideoText.TextColor3 = main_color or Color3.fromRGB(0, 255, 127)
 	VideoText.TextSize = 19.000
 	VideoText.TextStrokeTransparency = 0.100
@@ -1326,7 +1326,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	FastLoadText.Size = UDim2.new(0, 188, 0, 24)
 	FastLoadText.ZIndex = 4
 	FastLoadText.Font = Enum.Font.Cartoon
-	FastLoadText.Text = "  Fast Load (PC):"
+	FastLoadText.Text = "  快速负载（PC）:"
 	FastLoadText.TextColor3 = main_color or Color3.fromRGB(0, 255, 127)
 	FastLoadText.TextSize = 19.000
 	FastLoadText.TextStrokeTransparency = 0.100
